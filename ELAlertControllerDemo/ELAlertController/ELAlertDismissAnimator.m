@@ -7,6 +7,7 @@
 //
 
 #import "ELAlertDismissAnimator.h"
+#import "Masonry.h"
 
 @implementation ELAlertDismissAnimator
 

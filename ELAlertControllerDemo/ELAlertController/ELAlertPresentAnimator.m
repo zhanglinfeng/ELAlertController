@@ -7,6 +7,7 @@
 //
 
 #import "ELAlertPresentAnimator.h"
+#import "Masonry.h"
 
 #pragma mark - ELAlertPresentAnimator
 
