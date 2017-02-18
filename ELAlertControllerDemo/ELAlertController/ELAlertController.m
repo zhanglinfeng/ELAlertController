@@ -9,6 +9,7 @@
 #import "ELAlertController.h"
 #import "ELAlertPresentAnimator.h"
 #import "ELAlertDismissAnimator.h"
+#import "Masonry.h"
 
 
 @interface ELAlertController () 
