@@ -9,4 +9,5 @@ s.source = { :git => 'https://github.com/zhanglinfeng/ELAlertController.git', :t
 s.requires_arc = true
 s.ios.deployment_target = '8.0'
 s.source_files = 'ELAlertControllerDemo/ELAlertController/*.{h,m}'
+s.dependency "Masonry"
 end
