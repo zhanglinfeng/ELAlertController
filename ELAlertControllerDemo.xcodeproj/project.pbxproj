@@ -1,0 +1,655 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0B1EA5F093B5775EF6AF6FBA /* libPods-ELAlertControllerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 06C9AA5D1398879F36C275A1 /* libPods-ELAlertControllerDemo.a */; };
+		D113B09E1E35E5DC00C3B0F9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B09D1E35E5DC00C3B0F9 /* main.m */; };
+		D113B0A11E35E5DC00C3B0F9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0A01E35E5DC00C3B0F9 /* AppDelegate.m */; };
+		D113B0A41E35E5DC00C3B0F9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0A31E35E5DC00C3B0F9 /* ViewController.m */; };
+		D113B0A71E35E5DC00C3B0F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D113B0A51E35E5DC00C3B0F9 /* Main.storyboard */; };
+		D113B0A91E35E5DC00C3B0F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D113B0A81E35E5DC00C3B0F9 /* Assets.xcassets */; };
+		D113B0AC1E35E5DC00C3B0F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D113B0AA1E35E5DC00C3B0F9 /* LaunchScreen.storyboard */; };
+		D113B0B71E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0B61E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.m */; };
+		D113B0C21E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0C11E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.m */; };
+		D113B0D61E35E60500C3B0F9 /* ELAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0D11E35E60500C3B0F9 /* ELAlertController.m */; };
+		D113B0D81E35E60500C3B0F9 /* UIViewController+PresentAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0D51E35E60500C3B0F9 /* UIViewController+PresentAlert.m */; };
+		D113B0DF1E3731D000C3B0F9 /* ELAlertPresentAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0DE1E3731D000C3B0F9 /* ELAlertPresentAnimator.m */; };
+		D113B0E21E3731E200C3B0F9 /* ELAlertDismissAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = D113B0E11E3731E200C3B0F9 /* ELAlertDismissAnimator.m */; };
+		D113B0EB1E375D7C00C3B0F9 /* 蚂蚁.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D113B0EA1E375D7C00C3B0F9 /* 蚂蚁.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D113B0B31E35E5DC00C3B0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D113B0911E35E5DC00C3B0F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D113B0981E35E5DC00C3B0F9;
+			remoteInfo = ELAlertControllerDemo;
+		};
+		D113B0BE1E35E5DC00C3B0F9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D113B0911E35E5DC00C3B0F9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D113B0981E35E5DC00C3B0F9;
+			remoteInfo = ELAlertControllerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		06C9AA5D1398879F36C275A1 /* libPods-ELAlertControllerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ELAlertControllerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D771188150998F0DE6D34CC /* Pods-ELAlertControllerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELAlertControllerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ELAlertControllerDemo/Pods-ELAlertControllerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		5A48E415DEFBC50DDB8D61AC /* Pods-ELAlertControllerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ELAlertControllerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ELAlertControllerDemo/Pods-ELAlertControllerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		D113B0991E35E5DC00C3B0F9 /* ELAlertControllerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ELAlertControllerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D113B09D1E35E5DC00C3B0F9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D113B09F1E35E5DC00C3B0F9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D113B0A01E35E5DC00C3B0F9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D113B0A21E35E5DC00C3B0F9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D113B0A31E35E5DC00C3B0F9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D113B0A61E35E5DC00C3B0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D113B0A81E35E5DC00C3B0F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D113B0AB1E35E5DC00C3B0F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D113B0AD1E35E5DC00C3B0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113B0B21E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELAlertControllerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D113B0B61E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAlertControllerDemoTests.m; sourceTree = "<group>"; };
+		D113B0B81E35E5DC00C3B0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113B0BD1E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ELAlertControllerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D113B0C11E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ELAlertControllerDemoUITests.m; sourceTree = "<group>"; };
+		D113B0C31E35E5DC00C3B0F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D113B0D01E35E60500C3B0F9 /* ELAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAlertController.h; sourceTree = "<group>"; };
+		D113B0D11E35E60500C3B0F9 /* ELAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAlertController.m; sourceTree = "<group>"; };
+		D113B0D41E35E60500C3B0F9 /* UIViewController+PresentAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+PresentAlert.h"; sourceTree = "<group>"; };
+		D113B0D51E35E60500C3B0F9 /* UIViewController+PresentAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+PresentAlert.m"; sourceTree = "<group>"; };
+		D113B0D91E35E78800C3B0F9 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		D113B0DD1E3731D000C3B0F9 /* ELAlertPresentAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAlertPresentAnimator.h; sourceTree = "<group>"; };
+		D113B0DE1E3731D000C3B0F9 /* ELAlertPresentAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAlertPresentAnimator.m; sourceTree = "<group>"; };
+		D113B0E01E3731E200C3B0F9 /* ELAlertDismissAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELAlertDismissAnimator.h; sourceTree = "<group>"; };
+		D113B0E11E3731E200C3B0F9 /* ELAlertDismissAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELAlertDismissAnimator.m; sourceTree = "<group>"; };
+		D113B0EA1E375D7C00C3B0F9 /* 蚂蚁.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "蚂蚁.jpg"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D113B0961E35E5DC00C3B0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B1EA5F093B5775EF6AF6FBA /* libPods-ELAlertControllerDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0AF1E35E5DC00C3B0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0BA1E35E5DC00C3B0F9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		51D89A005FACEB0602DDDAA6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2D771188150998F0DE6D34CC /* Pods-ELAlertControllerDemo.debug.xcconfig */,
+				5A48E415DEFBC50DDB8D61AC /* Pods-ELAlertControllerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D113B0901E35E5DC00C3B0F9 = {
+			isa = PBXGroup;
+			children = (
+				D113B09B1E35E5DC00C3B0F9 /* ELAlertControllerDemo */,
+				D113B0B51E35E5DC00C3B0F9 /* ELAlertControllerDemoTests */,
+				D113B0C01E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests */,
+				D113B09A1E35E5DC00C3B0F9 /* Products */,
+				51D89A005FACEB0602DDDAA6 /* Pods */,
+				F723C441F8D68379B5D657ED /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D113B09A1E35E5DC00C3B0F9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D113B0991E35E5DC00C3B0F9 /* ELAlertControllerDemo.app */,
+				D113B0B21E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.xctest */,
+				D113B0BD1E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D113B09B1E35E5DC00C3B0F9 /* ELAlertControllerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D113B0CF1E35E60500C3B0F9 /* ELAlertController */,
+				D113B09F1E35E5DC00C3B0F9 /* AppDelegate.h */,
+				D113B0A01E35E5DC00C3B0F9 /* AppDelegate.m */,
+				D113B0A21E35E5DC00C3B0F9 /* ViewController.h */,
+				D113B0A31E35E5DC00C3B0F9 /* ViewController.m */,
+				D113B0A51E35E5DC00C3B0F9 /* Main.storyboard */,
+				D113B0EA1E375D7C00C3B0F9 /* 蚂蚁.jpg */,
+				D113B0A81E35E5DC00C3B0F9 /* Assets.xcassets */,
+				D113B0AA1E35E5DC00C3B0F9 /* LaunchScreen.storyboard */,
+				D113B0AD1E35E5DC00C3B0F9 /* Info.plist */,
+				D113B09C1E35E5DC00C3B0F9 /* Supporting Files */,
+			);
+			path = ELAlertControllerDemo;
+			sourceTree = "<group>";
+		};
+		D113B09C1E35E5DC00C3B0F9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D113B09D1E35E5DC00C3B0F9 /* main.m */,
+				D113B0D91E35E78800C3B0F9 /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D113B0B51E35E5DC00C3B0F9 /* ELAlertControllerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				D113B0B61E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.m */,
+				D113B0B81E35E5DC00C3B0F9 /* Info.plist */,
+			);
+			path = ELAlertControllerDemoTests;
+			sourceTree = "<group>";
+		};
+		D113B0C01E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D113B0C11E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.m */,
+				D113B0C31E35E5DC00C3B0F9 /* Info.plist */,
+			);
+			path = ELAlertControllerDemoUITests;
+			sourceTree = "<group>";
+		};
+		D113B0CF1E35E60500C3B0F9 /* ELAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				D113B0D01E35E60500C3B0F9 /* ELAlertController.h */,
+				D113B0D11E35E60500C3B0F9 /* ELAlertController.m */,
+				D113B0D41E35E60500C3B0F9 /* UIViewController+PresentAlert.h */,
+				D113B0D51E35E60500C3B0F9 /* UIViewController+PresentAlert.m */,
+				D113B0DD1E3731D000C3B0F9 /* ELAlertPresentAnimator.h */,
+				D113B0DE1E3731D000C3B0F9 /* ELAlertPresentAnimator.m */,
+				D113B0E01E3731E200C3B0F9 /* ELAlertDismissAnimator.h */,
+				D113B0E11E3731E200C3B0F9 /* ELAlertDismissAnimator.m */,
+			);
+			path = ELAlertController;
+			sourceTree = "<group>";
+		};
+		F723C441F8D68379B5D657ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				06C9AA5D1398879F36C275A1 /* libPods-ELAlertControllerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D113B0981E35E5DC00C3B0F9 /* ELAlertControllerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D113B0C61E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemo" */;
+			buildPhases = (
+				7DF97581E0DF5F1E43E063C8 /* [CP] Check Pods Manifest.lock */,
+				D113B0951E35E5DC00C3B0F9 /* Sources */,
+				D113B0961E35E5DC00C3B0F9 /* Frameworks */,
+				D113B0971E35E5DC00C3B0F9 /* Resources */,
+				A19FEA1EE960E5C4A71A60D2 /* [CP] Embed Pods Frameworks */,
+				65FB623009A0DCDEA58493F7 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ELAlertControllerDemo;
+			productName = ELAlertControllerDemo;
+			productReference = D113B0991E35E5DC00C3B0F9 /* ELAlertControllerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D113B0B11E35E5DC00C3B0F9 /* ELAlertControllerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D113B0C91E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemoTests" */;
+			buildPhases = (
+				D113B0AE1E35E5DC00C3B0F9 /* Sources */,
+				D113B0AF1E35E5DC00C3B0F9 /* Frameworks */,
+				D113B0B01E35E5DC00C3B0F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D113B0B41E35E5DC00C3B0F9 /* PBXTargetDependency */,
+			);
+			name = ELAlertControllerDemoTests;
+			productName = ELAlertControllerDemoTests;
+			productReference = D113B0B21E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D113B0BC1E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D113B0CC1E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemoUITests" */;
+			buildPhases = (
+				D113B0B91E35E5DC00C3B0F9 /* Sources */,
+				D113B0BA1E35E5DC00C3B0F9 /* Frameworks */,
+				D113B0BB1E35E5DC00C3B0F9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D113B0BF1E35E5DC00C3B0F9 /* PBXTargetDependency */,
+			);
+			name = ELAlertControllerDemoUITests;
+			productName = ELAlertControllerDemoUITests;
+			productReference = D113B0BD1E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D113B0911E35E5DC00C3B0F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "张林峰";
+				TargetAttributes = {
+					D113B0981E35E5DC00C3B0F9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = D975HMHLA6;
+						ProvisioningStyle = Automatic;
+					};
+					D113B0B11E35E5DC00C3B0F9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D113B0981E35E5DC00C3B0F9;
+					};
+					D113B0BC1E35E5DC00C3B0F9 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D113B0981E35E5DC00C3B0F9;
+					};
+				};
+			};
+			buildConfigurationList = D113B0941E35E5DC00C3B0F9 /* Build configuration list for PBXProject "ELAlertControllerDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D113B0901E35E5DC00C3B0F9;
+			productRefGroup = D113B09A1E35E5DC00C3B0F9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D113B0981E35E5DC00C3B0F9 /* ELAlertControllerDemo */,
+				D113B0B11E35E5DC00C3B0F9 /* ELAlertControllerDemoTests */,
+				D113B0BC1E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D113B0971E35E5DC00C3B0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D113B0EB1E375D7C00C3B0F9 /* 蚂蚁.jpg in Resources */,
+				D113B0AC1E35E5DC00C3B0F9 /* LaunchScreen.storyboard in Resources */,
+				D113B0A91E35E5DC00C3B0F9 /* Assets.xcassets in Resources */,
+				D113B0A71E35E5DC00C3B0F9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0B01E35E5DC00C3B0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0BB1E35E5DC00C3B0F9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65FB623009A0DCDEA58493F7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELAlertControllerDemo/Pods-ELAlertControllerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DF97581E0DF5F1E43E063C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A19FEA1EE960E5C4A71A60D2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ELAlertControllerDemo/Pods-ELAlertControllerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D113B0951E35E5DC00C3B0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D113B0A41E35E5DC00C3B0F9 /* ViewController.m in Sources */,
+				D113B0A11E35E5DC00C3B0F9 /* AppDelegate.m in Sources */,
+				D113B09E1E35E5DC00C3B0F9 /* main.m in Sources */,
+				D113B0E21E3731E200C3B0F9 /* ELAlertDismissAnimator.m in Sources */,
+				D113B0DF1E3731D000C3B0F9 /* ELAlertPresentAnimator.m in Sources */,
+				D113B0D61E35E60500C3B0F9 /* ELAlertController.m in Sources */,
+				D113B0D81E35E60500C3B0F9 /* UIViewController+PresentAlert.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0AE1E35E5DC00C3B0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D113B0B71E35E5DC00C3B0F9 /* ELAlertControllerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D113B0B91E35E5DC00C3B0F9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D113B0C21E35E5DC00C3B0F9 /* ELAlertControllerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D113B0B41E35E5DC00C3B0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D113B0981E35E5DC00C3B0F9 /* ELAlertControllerDemo */;
+			targetProxy = D113B0B31E35E5DC00C3B0F9 /* PBXContainerItemProxy */;
+		};
+		D113B0BF1E35E5DC00C3B0F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D113B0981E35E5DC00C3B0F9 /* ELAlertControllerDemo */;
+			targetProxy = D113B0BE1E35E5DC00C3B0F9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D113B0A51E35E5DC00C3B0F9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D113B0A61E35E5DC00C3B0F9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D113B0AA1E35E5DC00C3B0F9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D113B0AB1E35E5DC00C3B0F9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D113B0C41E35E5DC00C3B0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D113B0C51E35E5DC00C3B0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D113B0C71E35E5DC00C3B0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D771188150998F0DE6D34CC /* Pods-ELAlertControllerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D975HMHLA6;
+				GCC_PREFIX_HEADER = ./ELAlertControllerDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = ELAlertControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		D113B0C81E35E5DC00C3B0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A48E415DEFBC50DDB8D61AC /* Pods-ELAlertControllerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = D975HMHLA6;
+				GCC_PREFIX_HEADER = ./ELAlertControllerDemo/PrefixHeader.pch;
+				INFOPLIST_FILE = ELAlertControllerDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		D113B0CA1E35E5DC00C3B0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ELAlertControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELAlertControllerDemo.app/ELAlertControllerDemo";
+			};
+			name = Debug;
+		};
+		D113B0CB1E35E5DC00C3B0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ELAlertControllerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ELAlertControllerDemo.app/ELAlertControllerDemo";
+			};
+			name = Release;
+		};
+		D113B0CD1E35E5DC00C3B0F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ELAlertControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ELAlertControllerDemo;
+			};
+			name = Debug;
+		};
+		D113B0CE1E35E5DC00C3B0F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ELAlertControllerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zlf.ELAlertControllerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ELAlertControllerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D113B0941E35E5DC00C3B0F9 /* Build configuration list for PBXProject "ELAlertControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D113B0C41E35E5DC00C3B0F9 /* Debug */,
+				D113B0C51E35E5DC00C3B0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D113B0C61E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D113B0C71E35E5DC00C3B0F9 /* Debug */,
+				D113B0C81E35E5DC00C3B0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D113B0C91E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D113B0CA1E35E5DC00C3B0F9 /* Debug */,
+				D113B0CB1E35E5DC00C3B0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D113B0CC1E35E5DC00C3B0F9 /* Build configuration list for PBXNativeTarget "ELAlertControllerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D113B0CD1E35E5DC00C3B0F9 /* Debug */,
+				D113B0CE1E35E5DC00C3B0F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D113B0911E35E5DC00C3B0F9 /* Project object */;
+}
