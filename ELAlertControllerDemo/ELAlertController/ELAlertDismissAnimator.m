@@ -50,7 +50,7 @@
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         [fromView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(transitionContext.containerView);
-            make.width.equalTo(@(toView.frame.size.width - 20));
+            make.width.equalTo(@(transitionContext.containerView.frame.size.width - 20));
             make.top.equalTo(transitionContext.containerView).offset(transitionContext.containerView.frame.size.height);
         }];
         [transitionContext.containerView layoutIfNeeded];

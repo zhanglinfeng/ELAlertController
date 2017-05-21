@@ -15,6 +15,7 @@
 
 @property (nonatomic, assign) BOOL hideMask;
 @property (nonatomic, assign) BOOL needTapGesture;//是否需要点击空白处的事件
+@property (nonatomic, copy) void (^tapBlock)();//点击空白处回调
 
 @end
 
@@ -25,5 +26,7 @@
 }
 
 @property (nonatomic, assign) BOOL hideMask;
+@property (nonatomic, assign) BOOL needTapGesture;//是否需要点击空白处的事件
+@property (nonatomic, copy) void (^tapBlock)();//点击空白处回调
 
 @end

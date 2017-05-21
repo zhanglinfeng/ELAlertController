@@ -118,7 +118,9 @@
         NSLog(@"点击了Cancel");
     }];
     
-    [alert addTextFieldWidthPlaceholder:@"请输入密码"];
+    [alert addTextField:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"请输入密码";
+    }];
     [self presentAlertController:alert completion:nil];
 }
 
@@ -135,8 +137,12 @@
     [alert addCancelButtonWithTitle:@"Cancel" block:^{
         NSLog(@"点击了Cancel");
     }];
-    [alert addTextFieldWidthPlaceholder:@"请输入账号"];
-    [alert addTextFieldWidthPlaceholder:@"请输入密码"];
+    [alert addTextField:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"请输入账号";
+    }];
+    [alert addTextField:^(UITextField * _Nonnull textField) {
+        textField.placeholder = @"请输入密码";
+    }];
     
     [self presentAlertController:alert completion:nil];
 }

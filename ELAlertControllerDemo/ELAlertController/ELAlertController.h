@@ -9,8 +9,8 @@
 #import <UIKit/UIKit.h>
 
 typedef NS_ENUM (NSInteger, ELAlertControllerStyle) {
-    ELAlertControllerStyle_Alert,
-    ELAlertControllerStyle_ActionSheet
+    ELAlertControllerStyle_ActionSheet = 0,
+    ELAlertControllerStyle_Alert
 };
 
 @interface ELAlertController : UIViewController <UITableViewDelegate, UITableViewDataSource, UIViewControllerTransitioningDelegate>
@@ -19,13 +19,13 @@ typedef NS_ENUM (NSInteger, ELAlertControllerStyle) {
     id<UIViewControllerAnimatedTransitioning> _dimissTransitioning;
 }
 
-@property (nonatomic, strong) NSMutableArray *textFields;
+@property (nonatomic, strong) NSMutableArray * _Nonnull textFields;
 @property (nonatomic, assign) BOOL needTap;//是否需要点击空白处消失
 
-+ (instancetype)alertControllerWithTitle:(NSString *)title message:(NSString *)message preferredStyle:(ELAlertControllerStyle)preferredStyle;
++ (instancetype _Nullable )alertControllerWithTitle:(NSString *_Nullable)title message:(NSString *_Nullable)message preferredStyle:(ELAlertControllerStyle)preferredStyle;
 
-- (void)addButtonWithTitle:(NSString *)title block:(void (^)())block;
-- (void)addCancelButtonWithTitle:(NSString *)title block:(void (^)())block;
-- (void)addTextFieldWidthPlaceholder:(NSString *)text;
+- (void)addButtonWithTitle:(NSString *_Nonnull)title block:(void (^_Nonnull)())block;
+- (void)addCancelButtonWithTitle:(NSString *_Nonnull)title block:(void (^_Nonnull)())block;
+- (void)addTextField:(void (^ __nullable)(UITextField * _Nonnull textField))block;
 
 @end

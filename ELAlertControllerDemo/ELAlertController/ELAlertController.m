@@ -364,16 +364,19 @@
                         nil] atIndex:0];
 }
 
-- (void)addTextFieldWidthPlaceholder:(NSString *)text {
+- (void)addTextField:(void (^ __nullable)(UITextField *textField))block {
     UITextField *tf = [[UITextField alloc] init];
     tf.borderStyle = UITextBorderStyleNone;
     tf.layer.borderWidth = 1/[UIScreen mainScreen].scale;
     tf.layer.borderColor = [UIColor darkGrayColor].CGColor;
     tf.textColor = [UIColor blackColor];
     tf.font = [UIFont systemFontOfSize:13];
-    tf.placeholder = text;
     tf.backgroundColor = [UIColor whiteColor];
     [_textFields addObject:tf];
+    
+    if (block) {
+        block(tf);
+    }
 }
 
 
@@ -478,8 +481,22 @@
     if (self.elPreferredStyle == ELAlertControllerStyle_Alert) {
         _presentedTransitioning = [ELAlertPresentAnimator new];
         [(ELAlertPresentAnimator *)_presentedTransitioning setNeedTapGesture:self.needTap];
+        NSArray *block = [_btnBlocks firstObject];
+        id obj = block[0];
+        if (![obj isEqual:[NSNull null]])
+        {
+            [(ELActionSheetPresentAnimator *)_presentedTransitioning setTapBlock:obj];
+        }
     } else {
         _presentedTransitioning = [ELActionSheetPresentAnimator new];
+        [(ELActionSheetPresentAnimator *)_presentedTransitioning setNeedTapGesture:self.needTap];
+        NSArray *block = [_btnBlocks firstObject];
+        id obj = block[0];
+        if (![obj isEqual:[NSNull null]])
+        {
+            [(ELActionSheetPresentAnimator *)_presentedTransitioning setTapBlock:obj];
+        }
+        
     }
     
     return _presentedTransitioning;

@@ -71,7 +71,10 @@
 
 - (void)elpresent_dismissCtrl:(id)sender {
     UIViewController *toViewController = [_transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    [toViewController dismissViewControllerAnimated:YES completion:^{}];
+    [toViewController dismissViewControllerAnimated:YES completion:^{
+        if (self.tapBlock) {
+            self.tapBlock();
+        }}];
 }
 
 @end
@@ -95,6 +98,11 @@
     
     _maskView = [[UIView alloc] initWithFrame:fromView.bounds];
     _maskView.backgroundColor = self.hideMask ? [UIColor clearColor] : [UIColor colorWithRed:0 green:0 blue:0 alpha:0];
+    if (self.needTapGesture) {
+        UITapGestureRecognizer *gesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(elpresent_dismissCtrl:)];
+        [_maskView addGestureRecognizer:gesture];
+        gesture.cancelsTouchesInView = NO;//为yes只响应优先级最高的事件，Button高于手势，textfield高于手势，textview高于手势，手势高于tableview。为no同时都响应，默认为yes
+    }
     
     UIView *toView = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey].view;
     [transitionContext.containerView addSubview:_maskView];
@@ -106,7 +114,7 @@
     
     [toView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(transitionContext.containerView);
-        make.width.equalTo(@(fromView.frame.size.width - 20));
+        make.width.equalTo(@(transitionContext.containerView.frame.size.width - 20));
         make.top.equalTo(transitionContext.containerView).offset(transitionContext.containerView.frame.size.height);
     }];
     
@@ -116,7 +124,7 @@
         
         [toView mas_remakeConstraints:^(MASConstraintMaker *make) {
             make.centerX.equalTo(transitionContext.containerView);
-            make.width.equalTo(@(fromView.frame.size.width - 20));
+            make.width.equalTo(@(transitionContext.containerView.frame.size.width - 20));
             make.bottom.equalTo(transitionContext.containerView);
         }];
         [transitionContext.containerView layoutIfNeeded];
@@ -127,7 +135,11 @@
 
 - (void)elpresent_dismissCtrl:(id)sender {
     UIViewController *toViewController = [_transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-    [toViewController dismissViewControllerAnimated:YES completion:^{}];
+    [toViewController dismissViewControllerAnimated:YES completion:^{
+        if (self.tapBlock) {
+            self.tapBlock();
+        }
+    }];
 }
 
 @end
